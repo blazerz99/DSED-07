@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Daycareapp";
+}
+<p></p>
+<div id="services">
+    <p></p>
+    <div class="container">
+        <p></p>
+        <hr />
+        <h1>Daycare</h1>
+
+        <div class="row">
+            <div class="col-md-2, col-lg-2">
+                <h3>Add Daycare Appointment</h3>
+                <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+                    <input class="form-control" type="text" id="add-firstName" placeholder="Add First Name">
+                    <input class="form-control" type="text" id="add-email" placeholder="Add Email">
+                    <input type="submit" value="Add">
+                </form>
+            </div>
+            <div class="col-md-2, col-lg-2">
+                <p id="counter"> </p>
+                <table class="table table-striped table-hover">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Email</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tbody id="allUser"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
